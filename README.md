@@ -23,53 +23,39 @@ Una vez que se obtiene la información, se deben procesar los datos y generar la
 ---
 
 <p align="center">
-  <a href="https://yfinance-python.org/index.html">
-    <img src="https://github.com/user-attachments/assets/2207cffa-9bd9-4b65-bb35-5dcb4b90c3f5" alt="yfinance page" width="800">
-  </a>
-</p><img width="4200" height="2600" alt="grafica_lineas" src="https://github.com/user-attachments/assets/2cb454d4-ac00-4bd3-9f8d-a2d85baea0cd" />
+  <img width="4200" height="2600" alt="grafica_lineas" src="https://github.com/user-attachments/assets/2cb454d4-ac00-4bd3-9f8d-a2d85baea0cd" />
+
+</p>
+
+
 
 
 ---
 
 # **Funciones del Código**   :open_file_folder:
-En la carpeta de [Ejemplos_con_YFinance](https://github.com/dsc-dascom/Datos_financieros_con_YFinance/tree/main/Ejemplos_con_YFinance) pueden encontrar tres trabajos diferentes que cumplen con tareas específicas:
+Este  código está compuesto por tres secciones. En la primera sección se muestra el rendimiento de los ETFs del S&P 500 con una gráfica de barras horizontales. En la sección dos se carga una lista con información de las empresas que conforman el benchmark, para posteriormente seleccionar un sector y visualizar las acciones dentro del mismo de forma dinámica (con la ayuda de una gráfica en plotly). En la tercera sección se encuentran las funciones que permiten el desarrollo del código de manera ordenada, parametrizada y ajustable.  
 
- 1. Introducción a los elementos de la librería **yfinance**: análisis individual de una acción. [Ver](https://github.com/dsc-dascom/Datos_financieros_con_YFinance/blob/main/Ejemplos_con_YFinance/1.An%C3%A1lisis_individual_de_una_acci%C3%B3n.ipynb)
- 2. Análisis simultáneo de varios instrumentos financieros de distinta clase: forex, bonds, indexes & stocks. [Ver](https://github.com/dsc-dascom/Datos_financieros_con_YFinance/blob/main/Ejemplos_con_YFinance/2.An%C3%A1lisis_simult%C3%A1neo_de_varios_instrumentos.ipynb)
- 3. Monitor de las empresas que componen el índice S&P500. [Ver](https://github.com/dsc-dascom/Datos_financieros_con_YFinance/blob/main/Ejemplos_con_YFinance/3.Monitor_del_S%26P500.ipynb)
+Para un buen funcionamiento del código, primero se deben importar las librerías y posteriormente correr la tercera sección del código que corresponde a las funciones. 
 
-<br>
-
-En cada sección hay una descripción de los objetos utilizados y la documentación pertinente.
-Además, en cada uno de los apartados se usan diferentes librerías para graficar la información obtenida:
-- **[mplfinance](https://github.com/matplotlib/mplfinance)** (para realizar gráficas de velas)
-- **[matplotlib](https://matplotlib.org/stable/index.html)** (gran capacidad de personalización)
-- **[plotly](https://plotly.com/python/)** (gráficas interactivas)
+<img width="598" height="469" alt="Screenshot 2025-11-02 202913" src="https://github.com/user-attachments/assets/cdf91a6e-afa8-48de-ac3d-8c6914042f2a" />
 
 <br>
-
-Por lo tanto, espero que este trabajo no solamente ayude en la comprensión del uso de **yfinance**, sino que también sirva para dar a conocer algunas librerias utiles para realizar gráficas financieras en **Python**. 
 
 ---
 
+
+
 # Video de apoyo   :computer:
 
-Como una forma de hacer más comprensible e interactivo este proyecto, van a poder encontrar en youtube un vido de ejemplo con este código:
-
-<br>
-
-<p align="center">
-  <a href="https://www.youtube.com/@dsc-econ">
-    <img src="https://github.com/user-attachments/assets/ea03e075-5617-4d87-a1a1-09d49854da74" alt="yt_canal" width="600">
-  </a>
-</p>
+De forma complementaria, en youtube he subido un video en el que muestro y explico algunos ejemplos del uso que se le puede dar a este cóodigo.
+El video lo pueden consultar [aquí]()
 
 <br>
 
 ---
 
 # **Redes Sociales** 👥
-A continuación dejo los enlaces a mi LinkedIn y a mi canal de Youtube donde tengo otros videos explicando más proyectos en Python y VBA:
+A continuación dejo los enlaces a mi página de LinkedIn y a mi canal de Youtube donde tengo otros proyectos con Python y VBA:
 
 <p align="center">
   <a href="https://www.linkedin.com/in/daniel-salmoran">
@@ -79,11 +65,9 @@ A continuación dejo los enlaces a mi LinkedIn y a mi canal de Youtube donde ten
 
 <br>
 
----
-
 <p align="center">
   <a href="https://www.youtube.com/@dsc-econ">
-    <img src="https://github.com/user-attachments/assets/ea03e075-5617-4d87-a1a1-09d49854da74" alt="yt_canal" width="600">
+    <img src="https://github.com/user-attachments/assets/ea03e075-5617-4d87-a1a1-09d49854da74" alt="canal_youtube" width="600">
   </a>
 </p>
 

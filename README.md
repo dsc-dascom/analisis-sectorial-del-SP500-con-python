@@ -1,4 +1,4 @@
-#  *Análisis sectorial del S&P 500* 📊
+#  **Análisis sectorial del S&P 500** 📊
 
   **El [índice Standard & Poor's 500 (S&P 500)](https://es.wikipedia.org/wiki/S%26P_500)** es uno de los índices bursátiles más importantes y representativos del estado del mercado bursátil de Estados unidos. Este índice está compuesto por 500 empresas de gran capitalización, distribuidas en 11 sectores, los cuales son:
 
@@ -14,22 +14,18 @@
 10. Real Estate (Bienes raíces) — XLRE
 11. Utilities (Servicios públicos) — XLU
 
-
 De esta forma, con este código se puede obtener información de tanto del S/P 500 como de los sectorers que lo conforman. 
-
-
-Una vez que se obtiene la información, se deben procesar los datos y generar la correspondiente gráfica que muestra el comportamiento de los instrumentos financieros, por lo que en este repositorio pueden encontrar algunos ejemplos de cómo trabajar con la librería **yfinance** y qué opciones existen para crear gráficas con datos financieros de las empresas que cotizan, por ejemplo, en el S&P 500. 
 
 *Nota: El ambiente de programación utilizado para este trabajo fue Jupyter Notebook.*
 
 ---
 
+Ejemplo de una gráfica generada coan este código: 
+
 <p align="center">
-  <img width="4200" height="2600" alt="grafica_lineas" src="https://github.com/user-attachments/assets/2cb454d4-ac00-4bd3-9f8d-a2d85baea0cd" />
+  <img width="4200" height="2600" alt="grafica_lineas" src="https://github.com/user-attachments/assets/69b46dbd-fa79-4a8b-a105-5c5fd9ef4db0" />
 
 </p>
-
-
 
 
 ---
@@ -41,15 +37,31 @@ Para un buen funcionamiento del código, primero se deben importar las librería
 
 <br>
 
-<img width="598" height="469" alt="Screenshot 2025-11-02 202913" src="https://github.com/user-attachments/assets/cdf91a6e-afa8-48de-ac3d-8c6914042f2a" />
+A) obtener_precios()
+
+B) rendimiento_acumulado()
+    
+C) grafica_barras_h()
+    
+D) lista_colores()
+    
+E) grafica_lineas()
+    
+F) mapa_termico_correlaciones()
+    
+G) sharpe_ratio()
+    
+H) risk_free_rate()
+    
+I) sortino_ratio()
+    
+J) moving_average()
 
 <br>
 
 ---
 
-
-
-# **Video de apoyo*** 
+# **Video de apoyo** 
 
 De forma complementaria, en youtube he subido un video en el que muestro y explico algunos ejemplos del uso que se le puede dar a este cóodigo.
 El video lo pueden consultar [aquí]()
@@ -60,6 +72,8 @@ El video lo pueden consultar [aquí]()
 
 # **Redes Sociales** 🌐
 A continuación dejo los enlaces a mi página de LinkedIn y a mi canal de Youtube donde tengo otros proyectos con Python y VBA:
+
+<br>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/daniel-salmoran">

@@ -24,22 +24,25 @@ Dentro de estos sectores podemos encontrar algunas de las empresas más grandes 
 
 <br>
 
-![Presentation1](https://github.com/user-attachments/assets/45a57fab-f9a4-46f1-a5dc-2e35fd23fd1d)
+<p align="center">
+  <img alt="imag_mag7" src="https://github.com/user-attachments/assets/45a57fab-f9a4-46f1-a5dc-2e35fd23fd1d" />
+
+</p>
 
 <br>
 
 Aunque una estrategia de inversión consiste en mantener una inversión diversificada, en algunas ocasiones los sectores del mercado presentan mejores oportunidades de inversión que el mercado en general, o incluso algunas acciones individuales dentro de un sector pueden llegar a representar una mejor inversión que todo el conjunto. Pero la tarea de encontrar acciones cuyos precios llegan a tener rendimientos tanto por encima o por debajo del rendimiento del mercado, se vuelve complicada al tener 500 empresas. Es por esto que comenzar con el análisis sectorial del S&P 500, puede permitir reconocer tendencias a un nivel intermedio; no general como el índice, ni particular como una acción individual. Entonces, al analizar un sector, se puede tener una mejor visión del movimiento del mercado accionario estadounidense, para posteriormente analizar el sector y ver qué acciones presentan comportamientos atípicos (*outliers*). 
 
-De esta forma, el presente código tiene como objetivo servir como una herramienta de análisis de los sectores del mercado, con la posibilidad de calcular tanto el rendimiento en un periodo dado de los ETF y acciones, así como calcular el Sharpe Ratio y el Sortino Ratio, indicadores financieros que brindan más información de la relación riesgo-beneficio de un instrumento financiero. Además, entre las funciones del código se puede calcular las medias móviles (SMA y EMA), indicadores técnicos básicos que se utilizan para identificar tendencias y posibles señales de compra/venta. Finalmente, como complemento para el análisis sectorial, se puede graficar un mapa térmico de correlaciones.
+De esta forma, el presente código tiene como objetivo servir como una herramienta de análisis de los sectores del mercado, con la posibilidad de calcular tanto el rendimiento en un periodo dado de los ETF y acciones, así como calcular el [Sharpe Ratio](https://www.investopedia.com/terms/s/sharperatio.asp) y el [Sortino Ratio](https://www.investopedia.com/terms/s/sortinoratio.asp), indicadores que brindan más información de la relación riesgo-beneficio de un instrumento financiero. Además, entre las funciones del código se puede calcular las medias móviles ([SMA](https://www.investopedia.com/terms/s/sma.asp) y [EMA](https://www.investopedia.com/terms/e/ema.asp)), indicadores técnicos básicos que se utilizan para identificar tendencias y posibles señales de compra/venta. Finalmente, como complemento para el análisis sectorial, se puede graficar un [mapa térmico de correlaciones](https://www.probabilidadyestadistica.net/matriz-de-correlacion/).
 
 En conclusión, esta herramienta tiene la intención de servir como un radar o monitor del mercado accionario, que junto con algunas funciones, proporciona información sobre el comportamiento de un instrumento financiero y proporcionar información para mejorar la toma de decisiones al momento de invertir.
 
 <br>
 
-
 ---
 
-Ejemplo de una gráfica generada con el código: Rendimiento en lo que val del año del S&P 500 $SPY y del Nasdaq-100 $QQQ
+Ejemplo de una gráfica generada con el código.
+Rendimiento en lo que val del año del S&P 500 $SPY y del Nasdaq-100 $QQQ
 
 <p align="center">
   <img width="4200" height="2600" alt="grafica_lineas" src="https://github.com/user-attachments/assets/69b46dbd-fa79-4a8b-a105-5c5fd9ef4db0" />
@@ -50,35 +53,90 @@ Ejemplo de una gráfica generada con el código: Rendimiento en lo que val del a
 ---
 
 # **Estrucutra del Código**   :open_file_folder:
-Este  código está compuesto por tres secciones. En la primera sección se muestra el rendimiento de los ETFs del S&P 500 con una gráfica de barras horizontales. En la sección dos se carga una lista con información de las empresas que conforman el benchmark, para posteriormente seleccionar un sector y visualizar las acciones dentro del mismo de forma dinámica (con la ayuda de una gráfica en plotly). En la tercera sección se encuentran las funciones que permiten el desarrollo del código de manera ordenada, parametrizada y ajustable.  
+Este  código está compuesto por tres secciones. 
 
-Para un buen funcionamiento del código, primero se deben importar las librerías y posteriormente correr la tercera sección del código que corresponde a las funciones. 
+Sección 1. En esta parte se puede visualizar, en una gráfica de barras horizontales, el rendimiento del mercado ([S&P 500](https://finance.yahoo.com/quote/%5EGSPC/)) junto con el comportamiento de los (11 sectores del SPDR ETFs](https://www.sectorspdrs.com/) en que se clasifican a las empresas. Sin embargo, también se puede visualizar el comportamiento de los sectores con una gráfica de líneas haciendo uso de la función correspondiente. Otra característica de esta sección es que se puede crear un mapa térmico de correlaciones de Pearson, el cual permite conocer la relación que guardan cada sector con el *benchmark*. A continuación los ejemplos.
 
-*Nota: El ambiente de programación utilizado para este trabajo fue Jupyter Notebook.*
+Sección 2. Aquí se empieza cargando una [tabla de información](https://en.wikipedia.org/wiki/List_of_S%26P_500_companies) de las empresas que componen al índice, para posteriormente seleccionar y filtrar las empresas de un sector y visualizar las acciones en un gráfica de líneas. La visualización de esta gráfica es dinámica ya que se utiliza la librería de plotly. Una vez se tiene identificado el sector y sus componentes, se puede calcular el Sharpe ratio y el Sortino Ratio para conocer cuánto rendimiento obtenemos por cada unidad de riesgo que asumimos, en el caso del Sharpe Ratio. Después de identificar las acciones con mayor rendimiento o con el Sharpe/Sortino Ratio más alto, podemos volver a grafica las empresas que nos interesan para hacer más un análisis más refinado. 
+
+Dentro del código agregué dos apartados extras con los que pretendía dar más ejemplos del uso que se le puede dar a las funciones. El primer exrtra es un portafolio compuesto por las empresas que conforman al grupo de las [MAG7](https://www.investing.com/academy/stocks/magnificent-seven-stocks/): Apple Inc. (AAPL), Microsoft Corp. (MSFT), Amazon.com Inc. (AMZN), Alphabet Inc. (GOOGL), NVIDIA Corp. (NVDA), Tesla Inc. (TSLA), Meta Platforms Inc. (META). Se puede ejecutar las mismas funciones anteriormente mencionadas sobre este grupo o si es cualquier otra combinación de instrumentos financieros.
+
+En el segundo procedimiento extra del código, utilizo la acción de Reddit $RDDT para ejemplificar el uso de la función que permite calcular las medias móviles: SMA y EMA. Estos indicadores técnicos son básicos para identificar las tendencias en los precios de una acción (o acciones) a lo largo del tiempo. Según sea el dato de los días en que se calculan estos valores, se agregan a la gráfica y se puede interactuar con ellos gracias a la gráfica de líneas en PLOTLY.
+
+Sección 3. En la tercera sección se encuentran las funciones que permiten el desarrollo del código de manera ordenada, parametrizada y ajustable. En orden de aparición en el código, las funciones utilizadas son las siguientes: 
+
+A) obtener_precios(inicio: str, fin: str, tickers: pd.DataFrame, with_benchmark: bool) -> pd.DataFrame:
+Esta funcion obtienen los precios de una lista de instrumentos financieros  
+
+Insumos:
+1) inicio. fecha del primer dia en que se obtendra la informacion. Debe ser un dato tipo string en formato YYYY-MM=DD.
+Nota: Dado que el primer dia se pierde al sacar rendimientos, se sugiere comenzar con un dia previo
+        
+2) fin. fecha del ultimo dia en que se obtendra la informacion. Debe ser un dato tipo string en formato YYYY-MM=DD,
+o en su defecto, puede ser texto que diga "hoy" o "today"
+    
+3) tickers. de los instrumentos de los que se quiere obtener los precios de cierre. Debe ser una columna de
+un pd.Dataframe. La funcion lo pasa a lista
+    
+4) with_benchmark. declarar si queremos agregar el benchmark del mercado. Es una variable booleana. 
+El benchmark que se agrega es el valor del indice S&P 500 (^GSPC)
+    
+Resultado:
+Un pd.DataFrame con los precios de los instrumentos financieros seleccionados y en la fecha indicada
 
 <br>
 
-A) obtener_precios()
 
 B) rendimiento_acumulado()
+Esta funcion realiza las operaciones necesarias para calcular el rendimiento diario de 
+los instrumentos financieros y los suma para conocer el rendimiento acumulado 
+    
+Insumos:
+1) tabla con los precios de los instrumentos. Debe ser un pd.DataFrame
+    
+Resultado:
+Un pd.DataFrame con los precios en porcentaje
+
+<br>
+
     
 C) grafica_barras_h()
+
+<br>
     
 D) lista_colores()
+
+<br>
     
 E) grafica_lineas()
+
+<br>
     
 F) mapa_termico_correlaciones()
+
+<br>
     
 G) sharpe_ratio()
+
+<br>
     
 H) risk_free_rate()
+
+<br>
     
 I) sortino_ratio()
+
+<br>
     
 J) moving_average()
 
-Dado que las funciones son 
+<br>
+
+Para un buen funcionamiento del código, primero se deben importar las librerías y posteriormente correr la tercera sección del código que corresponde a las funciones. 
+
+
+*Nota: El ambiente de programación utilizado para este trabajo fue Jupyter Notebook.*
+
 <br>
 
 ---

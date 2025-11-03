@@ -1,6 +1,12 @@
 #  **Análisis sectorial del S&P 500** 📊
 
-  **El [índice Standard & Poor's 500 (S&P 500)](https://es.wikipedia.org/wiki/S%26P_500)** es uno de los índices bursátiles más importantes y representativos del estado del mercado bursátil de Estados unidos. Este índice está compuesto por 500 empresas de gran capitalización, distribuidas en 11 sectores, los cuales son:
+  **El [índice Standard & Poor's 500 (S&P 500)](https://es.wikipedia.org/wiki/S%26P_500)**, junto con el Nasdaq y el Dow Jones, es uno de los índices bursátiles más importantes y representativos de la situación del mercado accionario de Estados Unidos. Este índice está compuesto por 500 empresas de gran capitalización que están clasificadas en [11 sectores](https://en.wikipedia.org/wiki/Global_Industry_Classification_Standard) de acuerdo a la principal operación comercial de las empresas.
+
+Uno puede consultar el valor del S&P 500 como [índice](https://www.santander.com/es/stories/que-son-los-indices-bursatiles-y-para-que-sirven) o su precio como [ETF](https://economipedia.com/definiciones/etf-fondos-cotizados.html), con la diferencia de que sólo se puede comprar/invertir en el ETF del S&P 500, el cual replica el comportamiento del índice. Algunos ETF que siguen el comportamiento del *benchmark* son [$SPY de SSGA](https://www.investopedia.com/articles/investing/122215/spy-spdr-sp-500-trust-etf.asp) o [$VOO de Vanguard](https://investor.vanguard.com/investment-products/etfs/profile/voo).
+
+De igual forma, existen ETFs que siguen el comportamiento de los sectores dentro del S&P 500. Para este trabajo, solo voy a nombrar a los [SPDR ETFs](https://www.sectorspdrs.com/).
+
+El nombre de los sectores y su [Ticker](https://economipedia.com/definiciones/simbolo-ticker.html) son los siguientes:
 
 1. Communication Services (Servicios de comunicación) — XLC
 2. Consumer Discretionary (Consumo discrecional) — XLY
@@ -9,18 +15,28 @@
 5. Financials (Finanzas) — XLF
 6. Health Care (Salud) — XLV
 7. Industrials (Industria) — XLI
-8. Information Technology (Tecnología de la información) — XLK
-9. Materials (Materiales) — XLB
-10. Real Estate (Bienes raíces) — XLRE
+8. Materials (Materiales) — XLB
+9. Real Estate (Bienes raíces) — XLRE
+10. Technology (Tecnología de la información) — XLK
 11. Utilities (Servicios públicos) — XLU
 
-De esta forma, con este código se puede obtener información de tanto del S/P 500 como de los sectorers que lo conforman. 
+Dentro de estos sectores podemos encontrar algunas de las empresas más grandes y reconocidas del mundo, como lo es Alphabet Inc. (GOOGL) y Meta Platforms Inc. (META), los cuales están dentro de Servicios de comunicación — XLC; Amazon.com Inc. (AMZN) y Tesla Inc. (TSLA), que se encuentran en Consumo discrecional — XLY: Apple Inc. (AAPL), Microsoft Corp. (MSFT), y NVIDIA Corp. (NVDA), que se encuentran en el sector de Tecnología — XLK, entre otros muchos ejemplos.
+
+<br>
+
+Aunque una estrategia de inversión consiste en mantener una inversión diversificada, en algunas ocasiones los sectores del mercado presentan mejores oportunidades de inversión que el mercado en general, o incluso algunas acciones individuales dentro de un sector pueden llegar a representar una mejor inversión que todo el conjunto. Pero la tarea de encontrar acciones cuyos precios llegan a tener rendimientos tanto por encima o por debajo del rendimiento del mercado, se vuelve complicada al tener 500 empresas. Es por esto que comenzar con el análisis sectorial del S&P 500, puede permitir reconocer tendencias a un nivel intermedio; no general como el índice, ni particular como una acción individual. Entonces, al analizar un sector, se puede tener una mejor visión del movimiento del mercado accionario estadounidense, para posteriormente analizar el sector y ver qué acciones presentan comportamientos atípicos (*outliers*). 
+
+De esta forma, el presente código tiene como objetivo servir como una herramienta de análisis de los sectores del mercado, con la posibilidad de calcular tanto el rendimiento en un periodo dado de los ETF y acciones, así como calcular el Sharpe Ratio y el Sortino Ratio, indicadores financieros que brindan más información de la relación riesgo-beneficio de un instrumento financiero. Además, entre las funciones del código se puede calcular las medias móviles (SMA y EMA), indicadores técnicos básicos que se utilizan para identificar tendencias y posibles señales de compra/venta. Finalmente, como complemento para el análisis sectorial, se puede graficar un mapa térmico de correlaciones.
+
+En conclusión, esta herramienta tiene la intención de servir como un radar o monitor del mercado accionario, que junto con algunas funciones, proporciona información sobre el comportamiento de un instrumento financiero y proporcionar información para mejorar la toma de decisiones al momento de invertir.
+
+<br>
 
 *Nota: El ambiente de programación utilizado para este trabajo fue Jupyter Notebook.*
 
 ---
 
-Ejemplo de una gráfica generada coan este código: 
+Ejemplo de una gráfica generada con el código: Rendimiento en lo que val del año del S&P 500 $SPY y del Nasdaq-100 $QQQ
 
 <p align="center">
   <img width="4200" height="2600" alt="grafica_lineas" src="https://github.com/user-attachments/assets/69b46dbd-fa79-4a8b-a105-5c5fd9ef4db0" />
@@ -57,6 +73,7 @@ I) sortino_ratio()
     
 J) moving_average()
 
+Dado que las funciones son 
 <br>
 
 ---

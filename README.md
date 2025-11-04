@@ -64,22 +64,42 @@ Sección 1. En esta parte se puede visualizar, en una gráfica de barras horizon
 
 <br>
 
-Sección 2. Aquí se empieza cargando una [tabla de información](https://en.wikipedia.org/wiki/List_of_S%26P_500_companies) de las empresas que componen al índice, para posteriormente seleccionar y filtrar las empresas de un sector y visualizar las acciones en un gráfica de líneas. La visualización de esta gráfica es dinámica ya que se utiliza la librería de plotly. Una vez se tiene identificado el sector y sus componentes, se puede calcular el Sharpe ratio y el Sortino Ratio para conocer cuánto rendimiento obtenemos por cada unidad de riesgo que asumimos, en el caso del Sharpe Ratio. Después de identificar las acciones con mayor rendimiento o con el Sharpe/Sortino Ratio más alto, podemos volver a grafica las empresas que nos interesan para hacer más un análisis más refinado. Ejemplo de la gráfica generada:
+Sección 2. Aquí se empieza cargando una [tabla de información](https://en.wikipedia.org/wiki/List_of_S%26P_500_companies) de las empresas que componen al índice, para posteriormente seleccionar y filtrar las empresas de un sector y visualizar las acciones en un gráfica de líneas. La visualización de esta gráfica es dinámica ya que se utiliza la librería de plotly. Una vez se tiene identificado el sector y sus componentes, se puede calcular el Sharpe ratio y el Sortino Ratio para conocer cuánto rendimiento obtenemos por cada unidad de riesgo que asumimos, en el caso del Sharpe Ratio. Después de identificar las acciones con mayor rendimiento o con el Sharpe/Sortino Ratio más alto, podemos volver a grafica las empresas que nos interesan para hacer más un análisis más refinado. 
+Ejemplo de la gráfica generada sobre el sector de Energía:
 
 <p align="center">
-  <img width="650" alt="picture1" src="https://github.com/user-attachments/assets/217f58ce-2ffc-4142-84b7-8ef1afe60d18" />
+  <img width="4200" height="2600" alt="picture1" src="https://github.com/user-attachments/assets/217f58ce-2ffc-4142-84b7-8ef1afe60d18" />
 
 </p>
 
 <br>
 
-Dentro del código agregué dos apartados extras con los que pretendía dar más ejemplos del uso que se le puede dar a las funciones. El primer exrtra es un portafolio compuesto por las empresas que conforman al grupo de las [MAG7](https://www.investing.com/academy/stocks/magnificent-seven-stocks/): Apple Inc. (AAPL), Microsoft Corp. (MSFT), Amazon.com Inc. (AMZN), Alphabet Inc. (GOOGL), NVIDIA Corp. (NVDA), Tesla Inc. (TSLA), Meta Platforms Inc. (META). Se puede ejecutar las mismas funciones anteriormente mencionadas sobre este grupo o si es cualquier otra combinación de instrumentos financieros.
+Gráfica de las empresas con mejor desempeño dentro del sector Energía:
 
+<p align="center">
+  <img width="4200" height="2600" alt="picture1" src="https://github.com/user-attachments/assets/69a724ab-a91a-4b1b-808c-f69ed500c062" />
 
+</p>
 
-En el segundo procedimiento extra del código, utilizo la acción de Reddit $RDDT para ejemplificar el uso de la función que permite calcular las medias móviles: SMA y EMA. Estos indicadores técnicos son básicos para identificar las tendencias en los precios de una acción (o acciones) a lo largo del tiempo. Según sea el dato de los días en que se calculan estos valores, se agregan a la gráfica y se puede interactuar con ellos gracias a la gráfica de líneas en PLOTLY.
+<br>
 
+Dentro del código agregué dos apartados extras con los que pretendía dar más ejemplos del uso que se le puede dar a las funciones. El primer exrtra es un portafolio compuesto por las empresas que conforman al grupo de las [MAG7](https://www.investing.com/academy/stocks/magnificent-seven-stocks/): Apple Inc. (AAPL), Microsoft Corp. (MSFT), Amazon.com Inc. (AMZN), Alphabet Inc. (GOOGL), NVIDIA Corp. (NVDA), Tesla Inc. (TSLA), Meta Platforms Inc. (META). Se puede ejecutar las mismas funciones anteriormente mencionadas sobre este grupo o si es cualquier otra combinación de instrumentos financieros. Ejemplo de la gráfica generada:
 
+<p align="center">
+  <img width="4200" height="2600" alt="picture1" src="https://github.com/user-attachments/assets/3e2c9dc6-c76d-4176-9ec3-2fc02db6feab" />
+
+</p>
+
+<br>
+
+En el segundo procedimiento extra del código, utilizo la acción de Reddit $RDDT para ejemplificar el uso de la función que permite calcular las medias móviles: SMA y EMA. Estos indicadores técnicos son básicos para identificar las tendencias en los precios de una acción (o acciones) a lo largo del tiempo. Según sea el dato de los días en que se calculan estos valores, se agregan a la gráfica y se puede interactuar con ellos gracias a la gráfica de líneas en PLOTLY. Ejemplo de la gráfica generada:
+
+<p align="center">
+  <img width="4200" height="2600" alt="picture1" src="https://github.com/user-attachments/assets/9799d91f-d4d2-49d5-b816-77b3a85a4355" />
+
+</p>
+
+<br>
 
 Sección 3. En la tercera sección se encuentran las funciones que permiten el desarrollo del código de manera ordenada, parametrizada y ajustable. En orden de aparición en el código, las funciones utilizadas son las siguientes: 
 

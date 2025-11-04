@@ -55,9 +55,12 @@ Rendimiento en lo que val del año del S&P 500 $SPY y del Nasdaq-100 $QQQ
 # **Estrucutra del Código**   :open_file_folder:
 Este  código está compuesto por tres secciones. 
 
-Sección 1. En esta parte se puede visualizar, en una gráfica de barras horizontales, el rendimiento del mercado ([S&P 500](https://finance.yahoo.com/quote/%5EGSPC/)) junto con el comportamiento de los (11 sectores del SPDR ETFs](https://www.sectorspdrs.com/) en que se clasifican a las empresas. Sin embargo, también se puede visualizar el comportamiento de los sectores con una gráfica de líneas haciendo uso de la función correspondiente. Otra característica de esta sección es que se puede crear un mapa térmico de correlaciones de Pearson, el cual permite conocer la relación que guardan cada sector con el *benchmark*. A continuación los ejemplos.
+Sección 1. En esta parte se puede visualizar, en una gráfica de barras horizontales, el rendimiento del mercado ([S&P 500](https://finance.yahoo.com/quote/%5EGSPC/)) junto con el comportamiento de los (11 sectores del SPDR ETFs](https://www.sectorspdrs.com/) en que se clasifican a las empresas. Sin embargo, también se puede visualizar el comportamiento de los sectores con una gráfica de líneas haciendo uso de la función correspondiente. Otra característica de esta sección es que se puede crear un mapa térmico de correlaciones de Pearson, el cual permite conocer la relación que guardan cada sector con el *benchmark*. Ejemplo de la gráfica generada:
 
+<p align="center">
+  <img alt="picture1" src="https://github.com/user-attachments/assets/98ce78b2-22f3-485f-94f1-06bb1b57f139" />
 
+</p>
 
 Sección 2. Aquí se empieza cargando una [tabla de información](https://en.wikipedia.org/wiki/List_of_S%26P_500_companies) de las empresas que componen al índice, para posteriormente seleccionar y filtrar las empresas de un sector y visualizar las acciones en un gráfica de líneas. La visualización de esta gráfica es dinámica ya que se utiliza la librería de plotly. Una vez se tiene identificado el sector y sus componentes, se puede calcular el Sharpe ratio y el Sortino Ratio para conocer cuánto rendimiento obtenemos por cada unidad de riesgo que asumimos, en el caso del Sharpe Ratio. Después de identificar las acciones con mayor rendimiento o con el Sharpe/Sortino Ratio más alto, podemos volver a grafica las empresas que nos interesan para hacer más un análisis más refinado. 
 

@@ -29,9 +29,9 @@ Dentro de estos sectores podemos encontrar algunas de las empresas más grandes 
 
 </p>
 
-<br>
-
 ---
+
+<br>
 
 #  **Objetivo de este proyecto** 🎯
 Aunque una estrategia de inversión consiste en mantener una inversión diversificada, en algunas ocasiones los sectores del mercado representan mejores oportunidades de inversión que el mercado en general, o incluso algunas acciones individuales dentro de un sector pueden llegar a ser una mejor inversión que todo el conjunto. Pero la tarea de encontrar acciones cuyos precios llegan a tener comportamientos distintos al del mercado, se vuelve complicada al tener 500 empresas. Es por esto que comenzar con el análisis sectorial del S&P 500, se puede reconocer tendencias a un nivel intermedio; no general como el índice, ni particular como una acción individual. Entonces, al analizar un sector, se puede tener una mejor visión del movimiento del mercado accionario estadounidense, para posteriormente analizar el sector y ver qué acciones presentan comportamientos atípicos (*outliers*). 
@@ -47,13 +47,13 @@ Ejemplo de una gráfica generada con el código.
 Rendimiento en lo que val del año del S&P 500 $SPY y del Nasdaq-100 $QQQ
 
 <p align="center">
-  <img width="4200" height="2600" alt="grafica_lineas" src="https://github.com/user-attachments/assets/69b46dbd-fa79-4a8b-a105-5c5fd9ef4db0" />
+  <img width="4200" height="2600" alt="grafica_linea_mercado" src="https://github.com/user-attachments/assets/69b46dbd-fa79-4a8b-a105-5c5fd9ef4db0" />
 
 </p>
 
-<br>
-
 ---
+
+<br>
 
 # **Estrucutra del Código**   :open_file_folder:
 Este  código está compuesto por tres secciones. 
@@ -70,7 +70,7 @@ Sección 2. Aquí se empieza cargando una [tabla de información](https://en.wik
 Ejemplo de la gráfica generada sobre el sector de Energía:
 
 <p align="center">
-  <img width="4200" height="2600" alt="picture1" src="https://github.com/user-attachments/assets/217f58ce-2ffc-4142-84b7-8ef1afe60d18" />
+  <img width="4200" height="2600" alt="picture2" src="https://github.com/user-attachments/assets/217f58ce-2ffc-4142-84b7-8ef1afe60d18" />
 
 </p>
 
@@ -79,7 +79,7 @@ Ejemplo de la gráfica generada sobre el sector de Energía:
 Gráfica de las empresas con mejor desempeño dentro del sector Energía:
 
 <p align="center">
-  <img width="4200" height="2600" alt="picture1" src="https://github.com/user-attachments/assets/69a724ab-a91a-4b1b-808c-f69ed500c062" />
+  <img width="4200" height="2600" alt="picture3" src="https://github.com/user-attachments/assets/69a724ab-a91a-4b1b-808c-f69ed500c062" />
 
 </p>
 
@@ -88,7 +88,7 @@ Gráfica de las empresas con mejor desempeño dentro del sector Energía:
 Dentro del código agregué dos apartados extras con los que pretendía dar más ejemplos del uso que se le puede dar a las funciones. El primer exrtra es un portafolio compuesto por las empresas que conforman al grupo de las [MAG7](https://www.investing.com/academy/stocks/magnificent-seven-stocks/): Apple Inc. (AAPL), Microsoft Corp. (MSFT), Amazon.com Inc. (AMZN), Alphabet Inc. (GOOGL), NVIDIA Corp. (NVDA), Tesla Inc. (TSLA), Meta Platforms Inc. (META). Se puede ejecutar las mismas funciones anteriormente mencionadas sobre este grupo o si es cualquier otra combinación de instrumentos financieros. Ejemplo de la gráfica generada:
 
 <p align="center">
-  <img width="4200" height="2600" alt="picture1" src="https://github.com/user-attachments/assets/3e2c9dc6-c76d-4176-9ec3-2fc02db6feab" />
+  <img width="4200" height="2600" alt="picture4" src="https://github.com/user-attachments/assets/3e2c9dc6-c76d-4176-9ec3-2fc02db6feab" />
 
 </p>
 
@@ -97,7 +97,7 @@ Dentro del código agregué dos apartados extras con los que pretendía dar más
 En el segundo procedimiento extra del código, utilizo la acción de Reddit $RDDT para ejemplificar el uso de la función que permite calcular las medias móviles: SMA y EMA. Estos indicadores técnicos son básicos para identificar las tendencias en los precios de una acción (o acciones) a lo largo del tiempo. Según sea el dato de los días en que se calculan estos valores, se agregan a la gráfica y se puede interactuar con ellos gracias a la gráfica de líneas en PLOTLY. Ejemplo de la gráfica generada:
 
 <p align="center">
-  <img width="4200" height="2600" alt="picture1" src="https://github.com/user-attachments/assets/9799d91f-d4d2-49d5-b816-77b3a85a4355" />
+  <img width="4200" height="2600" alt="picture5" src="https://github.com/user-attachments/assets/9799d91f-d4d2-49d5-b816-77b3a85a4355" />
 
 </p>
 
@@ -116,10 +116,9 @@ Se puede revisar las fucniones de este trabajo con mejor detalle [aquí](https:/
 
 <br>
 
-
 # **Video de Ejemplo** 💻
 
-De forma complementaria, en youtube he subido un video en el que muestro y explico algunos ejemplos del uso que se le puede dar a este cóodigo.
+De forma complementaria, en youtube he subido un video en el que muestro y explico algunos ejemplos del uso que se le puede dar a este código.
 El video lo pueden consultar [aquí]()
 
 <br>

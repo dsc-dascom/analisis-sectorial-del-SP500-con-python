@@ -31,6 +31,8 @@ Dentro de estos sectores podemos encontrar algunas de las empresas más grandes 
 
 <br>
 
+---
+
 #  **Objetivo de este proyecto** 🎯
 Aunque una estrategia de inversión consiste en mantener una inversión diversificada, en algunas ocasiones los sectores del mercado representan mejores oportunidades de inversión que el mercado en general, o incluso algunas acciones individuales dentro de un sector pueden llegar a ser una mejor inversión que todo el conjunto. Pero la tarea de encontrar acciones cuyos precios llegan a tener comportamientos distintos al del mercado, se vuelve complicada al tener 500 empresas. Es por esto que comenzar con el análisis sectorial del S&P 500, se puede reconocer tendencias a un nivel intermedio; no general como el índice, ni particular como una acción individual. Entonces, al analizar un sector, se puede tener una mejor visión del movimiento del mercado accionario estadounidense, para posteriormente analizar el sector y ver qué acciones presentan comportamientos atípicos (*outliers*). 
 
@@ -49,6 +51,7 @@ Rendimiento en lo que val del año del S&P 500 $SPY y del Nasdaq-100 $QQQ
 
 </p>
 
+<br>
 
 ---
 

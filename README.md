@@ -58,7 +58,7 @@ Rendimiento en lo que val del año del S&P 500 $SPY y del Nasdaq-100 $QQQ
 # **Estrucutra del Código**   :open_file_folder:
 Este  código está compuesto por tres secciones. 
 
-Sección 1. En esta parte se puede visualizar, en una gráfica de barras horizontales, el rendimiento del mercado ([S&P 500](https://finance.yahoo.com/quote/%5EGSPC/)) junto con el comportamiento de los (11 sectores del SPDR ETFs](https://www.sectorspdrs.com/) en que se clasifican a las empresas. Sin embargo, también se puede visualizar el comportamiento de los sectores con una gráfica de líneas haciendo uso de la función correspondiente. Otra característica de esta sección es que se puede crear un mapa térmico de correlaciones de Pearson, el cual permite conocer la relación que guardan cada sector con el *benchmark*. Ejemplo de la gráfica generada:
+Sección 1. En esta parte se puede visualizar, en una gráfica de barras horizontales, el rendimiento del mercado ([S&P 500](https://finance.yahoo.com/quote/%5EGSPC/)) junto con el comportamiento de los [11 sectores del SPDR ETFs](https://www.sectorspdrs.com/) en que se clasifican a las empresas. Sin embargo, también se puede visualizar el comportamiento de los sectores con una gráfica de líneas haciendo uso de la función correspondiente. Otra característica de esta sección es que se puede crear un mapa térmico de correlaciones de Pearson, el cual permite conocer la relación que guardan cada sector con el *benchmark*. Ejemplo de la gráfica generada:
 
 <p align="center">
   <img width="450" alt="picture1" src="https://github.com/user-attachments/assets/079102f7-8d8d-4a25-b219-f9b4e953e014" />

@@ -119,7 +119,7 @@ Se puede revisar las fucniones de este trabajo con mejor detalle [aquí](https:/
 # **Video de Ejemplo** 💻
 
 De forma complementaria, en youtube he subido un video en el que muestro y explico algunos ejemplos del uso que se le puede dar a este código.
-El video lo pueden consultar [aquí]()
+El video lo pueden consultar [aquí](https://youtu.be/p8sviSr_8iM)
 
 <br>
 
